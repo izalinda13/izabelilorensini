@@ -1,0 +1,168 @@
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-primaria: #007BFF;
+    --cor-secundaria: #1b628b;
+    --cor-texto: #333;
+    --cor-texto-claro: #000000;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+/* Estilo Geral */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.header__logo img {
+    max-height: 50px;
+}
+
+.header__nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header__nav ul li {
+    margin: 0 1em;
+}
+
+.header__nav ul li a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Principal */
+.principal {
+    background-image: url('img/fundo-principal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 5em 1em;
+}
+
+.principal__content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.principal__content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 5px;
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: var(--cor-secundaria);
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* Seção de Destinos */
+.destinos {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.destinos__grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destino {
+    width: 30%;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destino img {
+    width: 100%;
+    height: auto;
+}
+
+.destino h3 {
+    margin: 0.5em 0;
+}
+
+/* Seção de Pacotes */
+.pacotes {
+    padding: 4em 1em;
+    background-color: #f9f9f9;
+}
+
+.pacotes__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pacote {
+    width: 30%;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pacote img {
+    width: 100%;
+    height: auto;
+}
+
+.pacote h3 {
+    margin: 0.5em 0;
+}
+
+/* Seção de Contato */
+.contato {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+/* Rodapé */
